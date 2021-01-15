@@ -6,10 +6,11 @@
 
 <%@page import="java.text.DecimalFormat"%>
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.darren.fitnesscalculator.models.* , javax.naming.*" %>
-<%@page import="com.darren.fitnesscalculator.bmi.* , javax.naming.*" %>
-<%@page import="com.darren.fitnesscalculator.calorie.* , javax.naming.*" %>
-<%@page import="com.darren.fitnesscalculator.idealweight.* , javax.naming.*" %>
+<%@page import="com.darren.fitnesscalculator.models.ExerciseLevelRemote , javax.naming.*" %>
+<%@page import="com.darren.fitnesscalculator.models.PersonalInfoRemote , javax.naming.*" %>
+<%@page import="com.darren.fitnesscalculator.bmi.BmiRemote , javax.naming.*" %>
+<%@page import="com.darren.fitnesscalculator.calorie.CalorieCalculationRemote , javax.naming.*" %>
+<%@page import="com.darren.fitnesscalculator.idealweight.IdealWeightRemote , javax.naming.*" %>
 
 <%!
     private PersonalInfoRemote personalInfo = null;
@@ -17,7 +18,6 @@
     private IdealWeightRemote idealWeight = null;
     private BmiRemote bmiRemote = null;
     private CalorieCalculationRemote calorieCalculation = null;
-
     public void jspInit(){
         try{
             InitialContext ic = new InitialContext();
@@ -33,7 +33,6 @@
             System.out.println("Error: " + ex.getMessage());
         }
     }
-
     public void jspDestroy(){
         personalInfo = null;
         exerciseLevel = null;

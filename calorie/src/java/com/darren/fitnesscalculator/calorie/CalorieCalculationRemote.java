@@ -13,11 +13,9 @@ import javax.ejb.Remote;
  */
 @Remote
 public interface CalorieCalculationRemote {
-    
     void calculateCalorieLevel(String gender, double weight, double height, int age, double bodyFat,String calorieFormula, double counter);
     int getCaloriesToMaintain();
     int getCaloriesToMildWeightLoss();
     int getCaloriesToWeightLoss();
     int getCaloriesToExtremeWeightLoss();
-    
 }

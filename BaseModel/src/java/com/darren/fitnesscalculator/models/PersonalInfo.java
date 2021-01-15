@@ -13,7 +13,7 @@ import javax.ejb.Stateful;
  */
 @Stateful
 public class PersonalInfo implements PersonalInfoRemote {
-    
+
     private int age;
     private Double height;
     private Double weight;

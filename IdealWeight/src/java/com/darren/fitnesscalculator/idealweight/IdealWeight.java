@@ -28,4 +28,5 @@ public class IdealWeight implements IdealWeightRemote {
         }
         return Math.pow(height, 2) * counter;
     }
+    
 }

@@ -12,7 +12,7 @@ import javax.ejb.Stateful;
  * @author Darren
  */
 @Stateful
-public class Bmi implements BmiRemote {
+public class Bmi implements BmiRemote{
 
     @Override
     public double getBMI(double mass, double height){
@@ -46,5 +46,4 @@ public class Bmi implements BmiRemote {
     public static boolean isBetween(double x, double lower, double upper){
         return lower <= x && x <= upper;
     }
-    
 }

@@ -7,16 +7,13 @@ package com.darren.fitnesscalculator.calorie;
 
 import javax.ejb.Stateful;
 
-
 /**
  *
  * @author Darren
  */
 @Stateful
 public class CalorieCalculation implements CalorieCalculationRemote {
-    
- 
-    
+
     private static final String MALE = "male";
     private static final String FEMALE = "female";
 
@@ -113,10 +110,4 @@ public class CalorieCalculation implements CalorieCalculationRemote {
     public int getCaloriesToExtremeWeightLoss() {
         return caloriesToExtremeWeightLoss;
     }
-    
-    
-    
 }
-
-
-

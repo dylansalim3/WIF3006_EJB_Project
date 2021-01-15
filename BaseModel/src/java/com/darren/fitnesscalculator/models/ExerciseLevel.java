@@ -13,14 +13,11 @@ import javax.ejb.Stateful;
  */
 @Stateful
 public class ExerciseLevel implements ExerciseLevelRemote {
-
     private int id;
     private String exerciseLevel;
     private double counter;
-
     
-
-    @Override
+     @Override
     public int getId() {
         return id;
     }

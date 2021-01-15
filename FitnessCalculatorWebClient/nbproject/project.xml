@@ -7,10 +7,6 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="100">
-                    <file>${reference.IdealWeight.dist}</file>
-                    <path-in-war>WEB-INF/lib</path-in-war>
-                </library>
-                <library dirs="100">
                     <file>${reference.BaseModel.dist}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
@@ -22,8 +18,8 @@
                     <file>${reference.calorie.dist}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
-                <library dirs="200">
-                    <file>${reference.FitnessCalculatorClient.jar}</file>
+                <library dirs="100">
+                    <file>${reference.IdealWeight.dist}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
@@ -51,14 +47,6 @@
                 <target>dist</target>
                 <clean-target>clean</clean-target>
                 <id>dist</id>
-            </reference>
-            <reference>
-                <foreign-project>FitnessCalculatorClient</foreign-project>
-                <artifact-type>jar</artifact-type>
-                <script>build.xml</script>
-                <target>jar</target>
-                <clean-target>clean</clean-target>
-                <id>jar</id>
             </reference>
             <reference>
                 <foreign-project>IdealWeight</foreign-project>
